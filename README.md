@@ -1,7 +1,3 @@
-# Launching an application
-Kafka with ZooKeeper
-
-
 # Kafkatest
 An application testing Kafka's data processing capabilities.
 
