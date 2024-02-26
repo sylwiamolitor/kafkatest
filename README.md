@@ -16,7 +16,7 @@ An application testing Kafka's data processing capabilities.
 An application created to test Kafka's data processing capabilities.
 
 ## Technologies Used
-Java.
+Java, Docker, Kafka.
 
 ## Features
 TODO
@@ -27,9 +27,13 @@ TODO
 
 
 ## Setup
-Open two terminals. First, go to the correct location: `cd kafka_location`
-Then in each one of them start: `zookeeper-server-start.bat ../../config/zookeeper.properties` or `kafka-server-start.bat ../../config/server.properties`.
+Open two terminals. First, go to the correct location: `cd kafka_location/bin/windows`
+Then in each one of them start: `zookeeper-server-start.bat ../../config/zookeeper.properties` and `kafka-server-start.bat ../../config/server.properties`.
 
+Docker version:
+Start Docker Desktop.
+Use the command `docker-compose up -d`.
+Verify if servers are listening: `netstat -ano | findStr "22181"`, `netstat -ano | findStr "29092"`, `netstat -ano | findStr "32181"`, `netstat -ano | findStr "39092"`
 
 ## Usage
 TODO
