@@ -16,14 +16,14 @@ An application testing Kafka's data processing capabilities.
 An application created to test Kafka's data processing capabilities.
 
 ## Technologies Used
-Java, Docker, Kafka.
+Java, Docker, Kafka, OpenAPI.
 
 ## Features
-TODO
+Publishing messages.
 
 
 ## Screenshots
-TODO
+![img.png](img.png)
 
 
 ## Setup
@@ -36,7 +36,7 @@ Use the command `docker-compose up -d`.
 Verify if servers are listening: `netstat -ano | findStr "22181"`, `netstat -ano | findStr "29092"`, `netstat -ano | findStr "32181"`, `netstat -ano | findStr "39092"`, `netstat -ano | findStr "9092"`
 
 ## Usage
-TODO
+Use request or use OpenAPI to send message POST http://localhost:9092/api/v1/messages.
 
 
 ## Project Status
@@ -44,5 +44,5 @@ In progress.
 
 
 ## Room for Improvement
-TODO
+More functionalities.
 
