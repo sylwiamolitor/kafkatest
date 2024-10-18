@@ -13,10 +13,10 @@ An application testing Kafka's data processing capabilities.
 
 
 ## General Information
-An application created to test Kafka's data processing capabilities.
+An application created to test Kafka's data processing capabilities with Zipkin gathering timing data needed to troubleshoot latency problems.
 
 ## Technologies Used
-Java, Docker, Kafka, OpenAPI.
+Java, Docker, Kafka, OpenAPI, Zipkin.
 
 ## Features
 Publishing messages.
@@ -37,7 +37,7 @@ Verify if servers are listening: `netstat -ano | findStr "22181"`, `netstat -ano
 
 ## Usage
 Use request or use OpenAPI to send message POST http://localhost:9092/api/v1/messages.
-
+Check latency at `http://localhost:9411/zipkin/` (button "RUN QUERY"). ![zipkin_button.png](zipkin_button.png)
 
 ## Project Status
 In progress.

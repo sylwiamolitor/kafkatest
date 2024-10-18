@@ -128,3 +128,8 @@ services:
       KAFKA_REST_SCHEMA_REGISTRY_URL: 'http://schema-registry:8081'
       KAFKAREST_JMX_HOSTNAME: "localhost"
       KAFKAREST_JMX_PORT: 31005
+
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+      - 9411:9411
